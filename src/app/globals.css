@@ -1,0 +1,192 @@
+:root {
+  /* Colors */
+  --color-black: #000;
+  --color-white: #FFFEF7;
+  --color-primary: #769E92;
+  --color-green: #769E92;
+  --color-grey: #BBC7C7;
+
+  /* Backgrounds */
+  --bg-color-white: #FFFEF7;
+
+  /* Shadows */
+  --box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.15);
+}
+
+@font-face {
+  font-family: 'MADE-Mirage';
+  src: url('/assets/fonts/MADEMirage/MADE-Mirage-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MADE-Mirage';
+  src: url('/assets/fonts/MADEMirage/MADE-Mirage-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MADE-Mirage';
+  src: url('/assets/fonts/MADEMirage/MADE-Mirage-Medium.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MADE-Mirage';
+  src: url('/assets/fonts/MADEMirage/MADE-Mirage-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MADE-Mirage';
+  src: url('/assets/fonts/MADEMirage/MADE-Mirage-Black.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth !important;
+}
+
+body {
+  color: var(--color-black);
+  background-color: var(--bg-color-white);
+  position: relative;
+}
+body::before{
+  content: '';
+  width: 15%;
+  max-width: 303px;
+  height: 100%;
+  background-image: url('/assets/img/BgRight.svg');
+  background-repeat: repeat-y;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+main{
+  min-height: 100vh;
+}
+
+section{
+  padding: 95px 0;
+}
+
+.container{
+  width: 90%;
+  max-width: 1596px;
+  margin: 0 auto;
+}
+.smallContainer{
+  width: 90%;
+  max-width: 1396px;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.font-title-header{
+  font-family: MADE-Mirage !important;
+  font-size: clamp(55px, 3.5vw, 80px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.font-subtitle{
+  font-size: clamp(27px, 3.5vw, 42px);
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+
+.font-subtitle-2{
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.font-label{
+  font-size: clamp(26px, 1.5vw,32px);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.font-small-label{
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.font-description{
+  font-size: clamp(24px, 1.3vw, 28px);
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+.font-description-2{
+  font-family: MADE-Mirage;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.font-description-3{
+  font-size: clamp(22px, 1.3vw, 28px);
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+}
+.font-text{
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.font-text-2{
+  font-family: MADE-Mirage;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.font-subtext{
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+@media (width < 768px) {
+  section{
+    padding: 75px 0;
+  }
+}
+@media (width < 520px) {
+  .font-title-header{
+    font-size: 40px;
+  }
+}
+@media (width < 400px) {
+  section{
+    padding: 55px 0;
+  }
+  .font-title-header{
+    font-size: 30px;
+  }
+}
+

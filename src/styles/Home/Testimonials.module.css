@@ -1,0 +1,113 @@
+.TestimonialsAndButton{
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.TestimonialsContainer{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-top: 50px;
+  min-width: 1200px;
+}
+
+.Testimonials{
+  width: 100%;
+  flex: 0 0 100%;
+  min-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 50px;
+  cursor: grab;
+  padding-left: 10px;
+}
+
+.CardTestimonial{
+  background-color: var(--color-white);
+  height: 324px;
+  margin-bottom: 20px;
+  max-width: 380px;
+  list-style: none;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  padding: 0 0 30px;
+}
+.CardTestimonial div:first-child{
+  background-color: var(--color-grey);
+  height: 27px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+.CardTestimonial .CardTestimonialData{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding: 20px 30px 35px;
+  border-radius: 0px 0px 20px 20px;
+}
+.CardTestimonial .CardTestimonialUser{
+  display: flex;
+  gap: 15px;
+}
+.CardTestimonial img{
+  width: 78px;
+  height: 78px;
+  border-radius: 100px;
+}
+
+.TestimonialsButton{
+  background-color: transparent;
+  height: fit-content;
+  margin-top: 15%;
+  margin-right: 20px;
+  border: none;
+  transition: all .3s ease;
+}
+
+@media (width < 1700px){
+  .CardTestimonial{
+    min-width: none;
+    width: 300px;
+  }
+  .CardTestimonial .CardTestimonialData{
+    padding: 20px 24px;
+  }
+}
+
+@media (width < 1500px){
+}
+
+@media (width < 1200px){
+  .Testimonials li:last-child{
+    display: none;
+  }
+}
+
+@media (width < 750px){
+  .TestimonialsContainer{
+    gap: 0;
+  }
+  .Testimonials{
+    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .CardTestimonial{
+    max-width: 250px;
+  }
+  .CardTestimonialData p{
+    font-size: 18px;
+  }
+  .CardTestimonialUser label{
+    font-size: 18px;
+  }
+  .CardTestimonialUser h6{
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,78 @@
+.StoreProductsContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 30px;
+  margin: 125px auto 180px;
+}
+
+.StoreProductCard{
+  color: var(--color-white);
+  background-color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 465px;
+  width: 30%;
+  min-width: 320px;
+  max-width: 445px;
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transition: box-shadow .3s ease;
+}
+
+.StoreProductCard:hover{
+  box-shadow: 0px 4px 12px 2px rgba(0, 0, 0, 0.15);
+}
+.StoreProductCardContent{
+  border-radius: 20px 20px 0 0;
+  max-height: 350px;
+  overflow: hidden;
+}
+.StoreProductCardContent img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.StoreProductCardFooter{
+  background-color: var(--color-grey);
+  min-height: 100px;
+  padding: 30px;
+  border-radius: 0 0 20px 20px;
+  cursor: pointer;
+}
+
+@media (width < 1300px) {
+  .StoreProductsContainer{
+    gap: 40px;
+    justify-content: center;
+  }
+}
+@media (width < 1160px) {
+  .StoreProductCard{
+    width: 50%;
+  }
+}
+@media (width < 1030px) {
+  .StoreProductCard{
+    width: 100%;
+  }
+}
+@media (width < 520px) {
+  .StoreProductsContainer{
+    margin: 45px auto 10px;
+  }
+  .StoreProductCard{
+    min-height: 350px;
+  }
+  .StoreProductCardFooter{
+    min-height: 80px;
+    padding: 20px 28px;
+  }
+  .StoreProductCardFooter label{
+    text-align: center;
+    font-size: 24px !important;
+  }
+}

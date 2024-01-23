@@ -1,0 +1,6 @@
+/* About me */
+
+.AboutMeContainer{
+  display: flex;
+  gap: 89px;
+}
