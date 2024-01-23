@@ -8,7 +8,7 @@ export default async function handleNewsLetter(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
-  if (req.method === "POST") {
+  if (req.method === "POST" || req.method === "GET") {
     const { email } = req.body;
 
     const response = await fetch(
@@ -38,6 +38,6 @@ export default async function handleNewsLetter(
     }
   }
 
-  res.setHeader("Allow", ["POST"]);
+  res.setHeader("Allow", ["POST", "GET", "PUT"]);
   res.status(405).end(`Method ${req.method} Not Allowed`);
 }
