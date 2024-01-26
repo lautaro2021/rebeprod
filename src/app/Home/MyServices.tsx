@@ -86,7 +86,7 @@ const dataArray: TService[] = [
         text: "Agendar",
         iconURL: "/assets/icons/iconCalendar.svg",
         donwload: false,
-        link: "https://calendly.com/rebecamishell/50",
+        link: "https://calendly.com/rebecamishell",
       },
     ],
   },
