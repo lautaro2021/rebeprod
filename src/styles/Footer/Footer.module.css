@@ -122,16 +122,19 @@
 }
 
 @media (width < 520px) {
+  .FooterContainer {
+    gap: 40px;
+  }
   .FooterLinks a {
-    font-size: 28px;
+    font-size: 24px;
   }
 
   .FooterTextAndSM p {
-    font-size: 26px;
+    font-size: 22px;
   }
 
   .FooterCopyright p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 

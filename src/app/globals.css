@@ -200,7 +200,7 @@ a {
 
 @media (width < 400px) {
   section {
-    padding: 55px 0;
+    padding: 20px 0;
   }
 
   .font-title-header {

@@ -31,31 +31,28 @@ export default function Navbar() {
                         <div className={s.navBtnLine}></div>
                         <div className={s.navBtnLine}></div>
                     </button>
-                    {navOpen && (
-                        <div
-                            className={`${s.NavbarOptions} ${
-                                navOpen ? s.NavbarOptionsMobileOpen : ""
-                            }`}
-                        >
-                            {linksNav?.map((obj: TLinkNav) => {
-                                const linkStyle = {
-                                    color:
-                                        pathname === obj.url ? "#769E92" : "",
-                                };
-                                return (
-                                    <Link
-                                        key={obj.text}
-                                        href={obj.url}
-                                        className="font-text"
-                                        onClick={() => setNavOpen(false)}
-                                        style={linkStyle}
-                                    >
-                                        {obj.text}
-                                    </Link>
-                                );
-                            })}
-                        </div>
-                    )}
+                    <div
+                        className={`${s.NavbarOptions} ${
+                            navOpen ? s.NavbarOptionsMobileOpen : ""
+                        }`}
+                    >
+                        {linksNav?.map((obj: TLinkNav) => {
+                            const linkStyle = {
+                                color: pathname === obj.url ? "#769E92" : "",
+                            };
+                            return (
+                                <Link
+                                    key={obj.text}
+                                    href={obj.url}
+                                    className="font-text"
+                                    onClick={() => setNavOpen(false)}
+                                    style={linkStyle}
+                                >
+                                    {obj.text}
+                                </Link>
+                            );
+                        })}
+                    </div>
                 </div>
             </nav>
         </header>

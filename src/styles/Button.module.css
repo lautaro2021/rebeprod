@@ -23,6 +23,12 @@
 @media (width < 520px) {
   .Button {
     padding: 18px 24px;
-    font-size: 18px;
+    font-size: 22px;
+  }
+}
+@media (width < 420px) {
+  .Button {
+    padding: 18px 24px;
+    font-size: 19px;
   }
 }
