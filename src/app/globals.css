@@ -19,24 +19,28 @@
   font-weight: 100;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'MADE-Mirage';
   src: url('/assets/fonts/MADEMirage/MADE-Mirage-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'MADE-Mirage';
   src: url('/assets/fonts/MADEMirage/MADE-Mirage-Medium.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'MADE-Mirage';
   src: url('/assets/fonts/MADEMirage/MADE-Mirage-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'MADE-Mirage';
   src: url('/assets/fonts/MADEMirage/MADE-Mirage-Black.otf') format('opentype');
@@ -62,7 +66,8 @@ body {
   background-color: var(--bg-color-white);
   position: relative;
 }
-body::before{
+
+body::before {
   content: '';
   width: 15%;
   max-width: 303px;
@@ -75,20 +80,21 @@ body::before{
   z-index: -1;
 }
 
-main{
+main {
   min-height: 100vh;
 }
 
-section{
+section {
   padding: 95px 0;
 }
 
-.container{
+.container {
   width: 90%;
   max-width: 1596px;
   margin: 0 auto;
 }
-.smallContainer{
+
+.smallContainer {
   width: 90%;
   max-width: 1396px;
   margin: 0;
@@ -100,71 +106,80 @@ a {
   text-decoration: none;
 }
 
-.font-title-header{
+.font-title-header {
   font-family: MADE-Mirage !important;
   font-size: clamp(55px, 3.5vw, 80px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.font-subtitle{
+
+.font-subtitle {
   font-size: clamp(27px, 3.5vw, 42px);
   font-style: normal;
   font-weight: 200;
   line-height: normal;
 }
 
-.font-subtitle-2{
+.font-subtitle-2 {
   font-size: 25px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
-.font-label{
-  font-size: clamp(26px, 1.5vw,32px);
+
+.font-label {
+  font-size: clamp(26px, 1.5vw, 32px);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.font-small-label{
+
+.font-small-label {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.font-description{
+
+.font-description {
   font-size: clamp(24px, 1.3vw, 28px);
   font-style: normal;
   font-weight: 200;
   line-height: normal;
 }
-.font-description-2{
+
+.font-description-2 {
   font-family: MADE-Mirage;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.font-description-3{
+
+.font-description-3 {
   font-size: clamp(22px, 1.3vw, 28px);
   font-style: normal;
   font-weight: 200;
   line-height: normal;
 }
-.font-text{
+
+.font-text {
   font-size: 21px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
 }
-.font-text-2{
+
+.font-text-2 {
   font-family: MADE-Mirage;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.font-subtext{
+
+.font-subtext {
   font-size: 18px;
   font-style: normal;
   font-weight: 300;
@@ -172,21 +187,23 @@ a {
 }
 
 @media (width < 768px) {
-  section{
-    padding: 75px 0;
-  }
-}
-@media (width < 520px) {
-  .font-title-header{
-    font-size: 40px;
-  }
-}
-@media (width < 400px) {
-  section{
-    padding: 55px 0;
-  }
-  .font-title-header{
-    font-size: 30px;
+  section {
+    padding: 40px 0;
   }
 }
 
+@media (width < 520px) {
+  .font-title-header {
+    font-size: 40px;
+  }
+}
+
+@media (width < 400px) {
+  section {
+    padding: 55px 0;
+  }
+
+  .font-title-header {
+    font-size: 30px;
+  }
+}

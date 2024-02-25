@@ -1,9 +1,10 @@
-.ContactContainer{
+.ContactContainer {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-.ConectWhitMeBlock{
+
+.ConectWhitMeBlock {
   color: #fff;
   background-color: var(--color-primary);
   display: flex;
@@ -13,26 +14,30 @@
   padding: 50px !important;
   border-radius: 20px;
 }
-.ConectWhitMeBlock div{
+
+.ConectWhitMeBlock div {
   display: flex;
   flex-direction: column;
   gap: 30px;
   width: 50%;
   max-width: 828px;
 }
-.ConectWhitMeBlock div h4{
+
+.ConectWhitMeBlock div h4 {
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.ConectWhitMeBlock div p{
+
+.ConectWhitMeBlock div p {
   font-size: 28px;
   font-style: normal;
   font-weight: 200;
   line-height: normal;
 }
-.ConectWhitMeBlock div a{
+
+.ConectWhitMeBlock div a {
   color: var(--color-white);
   display: flex;
   align-items: center;
@@ -44,11 +49,12 @@
   border-radius: 20px;
   transition: .2s;
 }
-.ConectWhitMeBlock div a:hover{
+
+.ConectWhitMeBlock div a:hover {
   gap: 20px;
 }
 
-.ConectWhitMeBlock img{
+.ConectWhitMeBlock img {
   width: 40%;
   max-width: 543px;
   max-height: 400px;
@@ -57,56 +63,73 @@
 }
 
 @media (width < 1280px) {
-  .ConectWhitMeBlock{
+  .ConectWhitMeBlock {
     flex-direction: column;
   }
-  .ConectWhitMeBlock div{
+
+  .ConectWhitMeBlock div {
     width: 100%;
     max-width: none;
   }
-  .ConectWhitMeBlock img{
+
+  .ConectWhitMeBlock img {
     width: 100%;
     margin: auto;
   }
 }
+
 @media (width < 650px) {
-  .ConectWhitMeBlock{
+  .ConectWhitMeBlock {
     padding: 44px 52px !important;
   }
-  .ConectWhitMeBlock div{
+
+  .ConectWhitMeBlock div {
     width: 100%;
     max-width: none;
   }
-  .ConectWhitMeBlock img{
+
+  .ConectWhitMeBlock img {
     width: 100%;
     margin: auto;
   }
 }
+
 @media (width < 520px) {
-  .ConectWhitMeBlock{
-    padding: 24px!important;
+  .ConectWhitMeBlock {
+    padding: 24px !important;
   }
-  .ConectWhitMeBlock div h4{
+
+  .ConectWhitMeBlock div h4 {
     font-size: 32px;
   }
-  .ConectWhitMeBlock div p{
+
+  .ConectWhitMeBlock div p {
     font-size: 28px;
   }
-  .ConectWhitMeBlock div a{
+
+  .ConectWhitMeBlock div a {
     font-size: 28px;
+  }
+
+  .ConectWhitMeBlock img {
+    display: none;
   }
 }
+
 @media (width < 400px) {
-  .ConectWhitMeBlock{
+  .ConectWhitMeBlock {
     padding: 24px;
   }
-  .ConectWhitMeBlock div h4{
+
+  .ConectWhitMeBlock div h4 {
     font-size: 23px;
   }
-  .ConectWhitMeBlock div p{
+
+  .ConectWhitMeBlock div p {
     font-size: 19px;
   }
-  .ConectWhitMeBlock div a{
+
+  .ConectWhitMeBlock div a {
     font-size: 19px;
     padding: 4px 18px;
   }

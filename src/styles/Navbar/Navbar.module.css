@@ -35,7 +35,6 @@
   }
 
   .NavbarOptions {
-    opacity: 0;
     background-color: var(--color-white);
     box-shadow: var(--box-shadow);
     position: absolute;

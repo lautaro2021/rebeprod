@@ -1,6 +1,7 @@
 .HomeHeroSection {
   position: relative;
 }
+
 .HomeHeroContainer {
   display: flex;
   justify-content: space-between;
@@ -12,9 +13,11 @@
   width: 47%;
   max-width: 788px;
 }
-.HomeHeroText h1{
+
+.HomeHeroText h1 {
   margin-bottom: 15px;
 }
+
 .HomeHeroText h3 {
   margin-bottom: 75px;
 }
@@ -25,6 +28,7 @@
   max-height: 580px;
   border-radius: 20px;
 }
+
 .HomeHeroImgContainer img {
   width: 100%;
   border-radius: 20px;
@@ -34,7 +38,7 @@
   .HomeHeroContainer {
     flex-direction: column;
   }
-  
+
   .HomeHeroText {
     width: 85%;
   }
@@ -42,7 +46,7 @@
   .HomeHeroText h3 {
     margin-bottom: 75px;
   }
-  
+
   .HomeHeroImgContainer {
     position: relative;
     right: 0;
@@ -51,7 +55,8 @@
     max-width: none;
     margin-top: 90px;
   }
-  .HomeHeroImgContainer img{
+
+  .HomeHeroImgContainer img {
     position: absolute;
     right: -12%;
     max-width: 100%;
@@ -59,55 +64,74 @@
     object-fit: contain;
   }
 }
+
 @media (width < 770px) {
   .HomeHeroImgContainer {
     height: 380px;
   }
 }
+
+@media (width < 768px) {
+  .HomeHeroContainer {
+    margin-bottom: 40px;
+  }
+}
+
 @media (width < 650px) {
   .HomeHeroImgContainer {
     height: 250px;
   }
 }
+
 @media (width < 520px) {
   .HomeHeroText {
     width: 85%;
   }
+
   .HomeHeroText h1 {
     font-size: 45px;
     margin-bottom: 20px;
   }
+
   .HomeHeroText h3 {
     font-size: 30px;
   }
+
   .HomeHeroImgContainer {
     height: 200px;
     margin-top: 70px;
   }
 }
+
 @media (width < 400px) {
   .HomeHeroSection {
     margin-bottom: 50px;
   }
+
   .HomeHeroContainer {
     min-height: 0;
     gap: 30px;
   }
+
   .HomeHeroText {
     width: 90%;
   }
+
   .HomeHeroText h1 {
     font-size: 30px;
     margin-bottom: 15px;
   }
+
   .HomeHeroText h3 {
     font-size: 20px;
   }
+
   .HomeHeroImgContainer {
     height: 140px;
     margin-top: 30px;
   }
-  .HomeHeroImgContainer img{
+
+  .HomeHeroImgContainer img {
     top: 0;
   }
 }
