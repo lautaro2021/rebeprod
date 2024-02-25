@@ -1,37 +1,40 @@
-.FooterSection{
+.FooterSection {
   background-color: var(--color-primary);
 }
 
-.FooterContainer{
+.FooterContainer {
   color: var(--color-white);
   display: flex;
   gap: 90px;
 }
 
-.FooterIMG{
+.FooterIMG {
   object-fit: contain;
 }
 
-.FooterDataContainer{
+.FooterDataContainer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 65%;
   gap: 40px;
 }
-.FooterLinks{
+
+.FooterLinks {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.FooterTextAndSM{
+
+.FooterTextAndSM {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   width: 100%;
   gap: 20px;
 }
-.FooterTextAndSM p{
+
+.FooterTextAndSM p {
   width: 70%;
   max-width: 650px;
   font-family: MADE-Mirage;
@@ -41,12 +44,13 @@
   line-height: normal;
 }
 
-.FooterSocialMedia{
+.FooterSocialMedia {
   display: flex;
   justify-content: space-between;
   width: 30%;
 }
-.FooterSocialMedia a{
+
+.FooterSocialMedia a {
   background-color: var(--color-white);
   display: grid;
   place-items: center;
@@ -54,22 +58,26 @@
   width: 54px;
   border-radius: 50%;
 }
-.FooterSocialMedia a:first-child img{
+
+.FooterSocialMedia a:first-child img {
   height: 28px;
   width: 28px;
 }
-.FooterSocialMedia a img{
+
+.FooterSocialMedia a img {
   height: 32px;
   width: 32px;
 }
 
-.FooterCopyright{
+.FooterCopyright {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
+  text-align: center;
 }
-.FooterCopyright p{
+
+.FooterCopyright p {
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -77,76 +85,93 @@
 }
 
 @media (width < 1380px) {
-  .FooterContainer{
+  .FooterContainer {
     gap: 70px;
     flex-direction: column;
     align-items: center;
   }
-  .FooterDataContainer{
+
+  .FooterDataContainer {
     width: 100%;
   }
 }
+
 @media (width < 900px) {
-  .FooterLinks{
+  .FooterLinks {
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
-  .FooterTextAndSM{
+
+  .FooterTextAndSM {
     flex-direction: column;
     align-items: center;
     gap: 40px;
   }
-  .FooterTextAndSM p{
+
+  .FooterTextAndSM p {
     width: 100%;
     text-align: center;
   }
-  .FooterSocialMedia{
+
+  .FooterSocialMedia {
     justify-content: center;
     width: 100%;
     gap: 20px;
   }
 }
+
 @media (width < 520px) {
-  .FooterLinks a{
+  .FooterLinks a {
     font-size: 28px;
   }
-  .FooterTextAndSM p{
+
+  .FooterTextAndSM p {
     font-size: 26px;
   }
-  .FooterCopyright p{
+
+  .FooterCopyright p {
     font-size: 20px;
   }
 }
+
 @media (width < 400px) {
-  .FooterIMG{
+  .FooterIMG {
     width: 80%;
     margin: auto;
   }
-  .FooterSocialMedia{
+
+  .FooterSocialMedia {
     flex-wrap: wrap;
   }
-  .FooterLinks{
+
+  .FooterLinks {
     gap: 15px;
   }
-  .FooterLinks a{
+
+  .FooterLinks a {
     font-size: 21px;
   }
-  .FooterTextAndSM p{
+
+  .FooterTextAndSM p {
     font-size: 18px;
   }
-  .FooterCopyright p{
+
+  .FooterCopyright p {
     font-size: 14px;
   }
-  .FooterSocialMedia a{
+
+  .FooterSocialMedia a {
     height: 42px;
     width: 42px;
   }
-  .FooterSocialMedia a:first-child img{
+
+  .FooterSocialMedia a:first-child img {
     height: 20px;
     width: 20px;
   }
-  .FooterSocialMedia a img{
+
+  .FooterSocialMedia a img {
     height: 20px;
     width: 20px;
   }

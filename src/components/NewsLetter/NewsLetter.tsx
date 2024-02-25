@@ -58,12 +58,17 @@ export default function NewsletterForm() {
     return null;
   }
 
+  const handleCancelNewsletter = () => {
+    setIsOpen(false);
+    localStorage.setItem("subscribed", "true");
+  }
+
   return (
     <>
       {isOpen && (
         <section className={`${s.NewsLetterSection}`}>
           <div className={`${s.NewsLetterContainer}`}>
-            <button className={s.Xbtn} onClick={() => setIsOpen(false)}>
+            <button className={s.Xbtn} onClick={handleCancelNewsletter}>
               <Xbtn />
             </button>
             <h2 className="font-title-header">Únete a nuestro newsletter</h2>
