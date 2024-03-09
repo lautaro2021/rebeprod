@@ -1,0 +1,47 @@
+.planContainer {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    border-radius: 20px;
+    background-color: #F9F9F9;
+    color: #C7BBA9;
+    width: 100%;
+    gap: 5px;
+}
+
+.planContainer h4 {
+    font-family: 'MADE-Mirage';
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 100%;
+    text-align: center;
+}
+
+.planContainer h6 {
+    font-weight: 100;
+    font-size: 20px;
+    text-align: center;
+}
+
+.planContainer h3 {
+    font-weight: 100;
+    font-size: 24px;
+    text-align: center;
+}
+
+.planContainer h3 strong {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+@media (width<1500px) {
+    .planContainer h4 {
+        font-size: 24px;
+    }
+
+    .planContainer h6 {
+        font-size: 18px;
+        text-wrap: nowrap;
+    }
+}

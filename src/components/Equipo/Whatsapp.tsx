@@ -1,0 +1,18 @@
+import React from 'react'
+
+function Whatsapp() {
+    return (
+        <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="50" height="50" fill="url(#pattern0)" />
+            <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use href="#image0_261_114" transform="scale(0.01)" />
+                </pattern>
+                <image id="image0_261_114" width="100" height="100" href="data:image/png;base64,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" />
+            </defs>
+        </svg>
+
+    )
+}
+
+export default Whatsapp

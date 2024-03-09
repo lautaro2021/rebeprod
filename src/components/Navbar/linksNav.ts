@@ -13,6 +13,10 @@ export const linksNav: TLinkNav[] = [
     url: "/tienda",
   },
   {
+    text: "Equipo",
+    url: "/equipo",
+  },
+  {
     text: "Mis servicios",
     url: "/#MiServicios",
   },

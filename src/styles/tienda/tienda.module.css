@@ -1,19 +1,18 @@
-.HeroStoreSection {
+.HeroStoreContainer {
   color: var(--color-white);
   background-color: #c7bba9;
+  padding: 40px 0px;
 }
 
-.HeroStoreContainer {
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  gap: 20px;
+.HeroStoreContainer h1{
+  font-weight: 300;
 }
+
 .HeroStoreContainer h3 {
   color: var(--color-white);
   font-size: 32px;
   font-style: normal;
-  font-weight: 200;
+  font-weight: 100;
   line-height: normal;
 }
 

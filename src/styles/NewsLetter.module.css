@@ -21,7 +21,7 @@
   border-radius: 20px;
   transition: .2s;
   animation: NLAppear .4s ease;
-  z-index: 10000;
+  z-index: 1;
 }
 
 .NewsLetterContainer h2,

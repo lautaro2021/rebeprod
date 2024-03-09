@@ -1,0 +1,97 @@
+.mainArticle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.profileImage {
+    height: 100%;
+    aspect-ratio: 0.5/0.6;
+    width: 40%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.mainArticle aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 50%;
+}
+
+
+.mainArticle aside p {
+    font-weight: 200;
+    font-size: 28px;
+}
+
+.planContainer {
+    display: flex;
+    gap: 5px;
+}
+
+.socialContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.socialContainer div {
+    display: flex;
+    gap: 6px;
+}
+
+.socialContainer div img {
+    cursor: pointer;
+}
+
+.mobileImage {
+    height: 100%;
+    aspect-ratio: 0.5/0.6;
+    width: 40%;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    display: none;
+}
+
+@media (width<1600px) {
+    .mainArticle aside p {
+        font-size: 22px;
+    }
+}
+
+@media (width<1350px) {
+    .mainArticle aside {
+        max-width: 57%;
+    }
+}
+
+@media (width<1250px) {
+    .socialContainer {
+        margin-top: 20px;
+    }
+
+    .profileImage {
+        display: none;
+    }
+
+    .mainArticle aside {
+        max-width: 100%;
+    }
+
+    .mainArticle footer {
+        width: 100%;
+    }
+
+    .mobileImage {
+        display: inline-block;
+        min-width: 300px;
+    }
+
+    .infoContainer {
+        display: flex;
+        gap: 20px;
+    }
+}

@@ -1,36 +1,40 @@
-.Navbar{
+.Navbar {
   display: flex;
   align-items: center;
   gap: 70px;
   padding: 50px 0 80px;
 }
 
-.NavbarOptions{
+.NavbarOptions {
   display: flex;
   justify-content: space-evenly;
   width: 80%;
 }
-.NavbarOptionsMobile{
+
+.NavbarOptionsMobile {
   display: none;
   justify-content: space-between;
   width: 80%;
 }
+
 .navBtnBurger {
   display: none;
 }
 
 @media (width < 1300px) {
-  .HeaderNavbar{
+  .HeaderNavbar {
     position: relative;
     display: flex;
     flex-direction: column;
   }
-  .Navbar{
+
+  .Navbar {
     position: relative;
     justify-content: space-between;
     width: 100%;
   }
-  .NavbarOptions{
+
+  .NavbarOptions {
     display: none;
     background-color: var(--color-white);
     box-shadow: var(--box-shadow);
@@ -47,25 +51,30 @@
     z-index: 5;
     border-radius: 20px;
   }
-  .NavbarOptions a{
+
+  .NavbarOptions a {
     opacity: 0;
     transition: .1s;
     text-wrap: nowrap;
   }
-  .NavbarOptionsMobileOpen{
+
+  .NavbarOptionsMobileOpen {
     opacity: 1;
     display: flex;
     width: 100%;
     max-width: 400px;
     height: max-content;
   }
-  .NavbarOptionsMobileOpen a{
+
+  .NavbarOptionsMobileOpen a {
     opacity: 1;
     transition: .2s;
   }
-  .NavbarOptionsMobileOpen a:hover{
+
+  .NavbarOptionsMobileOpen a:hover {
     color: var(--color-green);
   }
+
   .navBtnBurger {
     background-color: var(--color-white);
     display: flex;
@@ -78,9 +87,9 @@
     cursor: pointer;
     gap: 5px;
     border-radius: 50%;
-    z-index: 10;
     box-shadow: var(--box-shadow);
   }
+
   .navBtnLine {
     width: 2rem;
     height: 0.25rem;
@@ -88,35 +97,40 @@
     transition: all 0.3s linear;
     border-radius: 5px;
   }
-  .navBtnBurgerOpen{
+
+  .navBtnBurgerOpen {
     position: relative;
   }
+
   .navBtnBurgerOpen .navBtnLine:nth-child(1) {
     position: absolute;
     margin: auto;
     transform: rotate(-45deg);
   }
-  
+
   .navBtnBurgerOpen .navBtnLine:nth-child(2) {
     opacity: 0;
   }
-  
+
   .navBtnBurgerOpen .navBtnLine:nth-child(3) {
     position: absolute;
     margin: auto;
     transform: rotate(45deg);
   }
 }
+
 @media (width < 520px) {
-  .Navbar{
+  .Navbar {
     padding-bottom: 10px;
   }
-  .NavbarOptions{
+
+  .NavbarOptions {
     top: 100%;
   }
 }
+
 @media (width < 400px) {
-  .NavbarOptions a{
+  .NavbarOptions a {
     font-size: 20px;
   }
 }
