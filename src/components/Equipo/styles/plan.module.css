@@ -45,3 +45,10 @@
         text-wrap: nowrap;
     }
 }
+
+@media (width<680px) {
+    .planContainer {
+        width: min-content;
+        flex: 1;
+    }
+}

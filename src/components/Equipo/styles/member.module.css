@@ -37,6 +37,12 @@
     margin-bottom: 15px;
 }
 
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .socialContainer div {
     display: flex;
     gap: 6px;
@@ -93,5 +99,19 @@
     .infoContainer {
         display: flex;
         gap: 20px;
+    }
+}
+
+@media (width<680px) {
+    .infoContainer {
+        flex-direction: column;
+    }
+
+    .planContainer {
+        flex-wrap: wrap;
+    }
+
+    .mobileImage {
+        width: 100%;
     }
 }
