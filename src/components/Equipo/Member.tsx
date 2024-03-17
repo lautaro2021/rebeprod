@@ -59,7 +59,7 @@ function Member({
                         <Button link={social.calendar} />
                         <div className={s.redes}>
                             <a href={social.whatsapp} target="_blank" rel="noreferrer">
-                                <img src="/assets/icons/Whatsapp.svg" width={40} height={40} />
+                                <img src="/assets/icons/WhatsApp.svg" width={40} height={40} />
                             </a>
                         </div>
                     </div>
