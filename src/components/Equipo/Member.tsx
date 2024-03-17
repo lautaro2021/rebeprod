@@ -37,8 +37,6 @@ function Member({
     memberPicture: StaticImageData;
     social: any;
 }) {
-    console.log(social);
-
     return (
         <article className={s.mainArticle}>
             <aside>
