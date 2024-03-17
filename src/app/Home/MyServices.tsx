@@ -1,5 +1,6 @@
 import s from "@/styles/Home/MyServices.module.css";
 import { PHONE_NUMBER as number } from "@/utils/social";
+import { REBE_CALENDAR } from "@/utils/social";
 
 type TService = {
   Title: string;
@@ -86,7 +87,7 @@ const dataArray: TService[] = [
         text: "Agendar",
         iconURL: "/assets/icons/iconCalendar.svg",
         donwload: false,
-        link: "https://calendly.com/rebecamishell",
+        link: REBE_CALENDAR,
       },
     ],
   },

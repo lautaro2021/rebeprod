@@ -1,6 +1,6 @@
 import Button from "@/components/Button";
 import s from "@/styles/Home/Hero.module.css";
-import { PHONE_NUMBER as number } from "@/utils/social";
+import { REBE_CALENDAR } from "@/utils/social";
 
 export default function Hero() {
   return (
@@ -12,7 +12,7 @@ export default function Hero() {
             Coach de salud holística y psicóloga especializada en psico
             alimentación
           </h3>
-          <Button link href="https://calendly.com/rebecamishell">
+          <Button link href={REBE_CALENDAR}>
             Agendar reunion
           </Button>
         </div>

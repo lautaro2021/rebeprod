@@ -37,6 +37,8 @@ function Member({
     memberPicture: StaticImageData;
     social: any;
 }) {
+    console.log(social);
+
     return (
         <article className={s.mainArticle}>
             <aside>
@@ -56,13 +58,10 @@ function Member({
                 </div>
                 <footer>
                     <div className={s.socialContainer}>
-                        <Button link="" />
+                        <Button link={social.calendar} />
                         <div className={s.redes}>
-                            <a href="" target="_blank" rel="noreferrer">
+                            <a href={social.whatsapp} target="_blank" rel="noreferrer">
                                 <img src="/assets/icons/Whatsapp.svg" width={40} height={40} />
-                            </a>
-                            <a href="" target="_blank" rel="noreferrer">
-                                <img src='/assets/icons/Telegram.svg' width={40} height={40} />
                             </a>
                         </div>
                     </div>
