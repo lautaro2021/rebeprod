@@ -68,18 +68,6 @@ const ServicesButton = ({ btn }: { btn: TServiceButton }) => {
 
 const dataArray: TService[] = [
   {
-    Title: "Coaching 1:1",
-    Description: "Transforma tu vida con orientación individualizada.",
-    buttons: [
-      {
-        text: "Agendar",
-        iconURL: "/assets/icons/iconProfile.svg",
-        donwload: false,
-        link: `https://wa.me/+${number}`,
-      },
-    ],
-  },
-  {
     Title: "Agendar una reunión",
     Description: "Reserva tu espacio para un cambio positivo.",
     buttons: [
