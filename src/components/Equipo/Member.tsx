@@ -7,22 +7,17 @@ const PLAN_DATA = [
     {
         title: "Paquete 1",
         description: "Una sesión",
-        price: 40,
+        price: 60,
     },
     {
         title: "Paquete 2",
-        description: "Dos sesiones",
-        price: 78,
+        description: "Tres sesiones",
+        price: 150,
     },
     {
         title: "Paquete 3",
-        description: "Tres sesiones",
-        price: 117,
-    },
-    {
-        title: "Paquete 4",
         description: "Cuatro sesiones",
-        price: 155,
+        price: 210,
     },
 ];
 
